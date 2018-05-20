@@ -44,4 +44,3 @@
      and also can be used in matrix comparision which returns a logical matrix;
 **** whos ,show the variables' status;
 
-
