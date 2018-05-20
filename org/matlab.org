@@ -1,0 +1,46 @@
+* this is a note for MATLAB
+  
+** BUILD-IN FUNCTIONS
+
+*** functio1ns for size
+    
+**** numel(matrix) returns the number of elements;
+     num of elements;
+     
+**** isempty(matrix);
+**** size(matrix(,a)) returns row and col;
+     when a==1 returns rows, and returns cols when a===2;
+    
+*** functions for transform
+    
+**** logical(matrix) returns one-hot matrix;
+
+**** single(matrix) is used to accelerate the computing rate of matrix 
+     by transform the double type to single type;
+     `
+
+**** cat(int,matrix1,matrix2)
+     concat two matrixs;
+     when the 1st arg==1,concat by col while arg==2,concat by row;
+*** functions for compare
+**** symbol `>`
+     returns a matrix of boolean;
+**** symbol '|'
+     logical or;
+**** find()
+     returns the indexs of non-empty value of matrix;
+     which can offer 3 parameters at most;
+     `1.matrix,
+     `2.number of the returned values
+     `3.'first' or 'last' decides Asc or Des order;
+**** ischar()
+*** functions for compute
+**** prod(array) returns the production of the array;
+     prod(matrix) returns a row of the productions of every colummn;
+*** other || symbols
+****  &  &&
+     &&:short_circuit and.
+     & :when two sides both are true then return a true;
+     and also can be used in matrix comparision which returns a logical matrix;
+**** whos ,show the variables' status;
+
