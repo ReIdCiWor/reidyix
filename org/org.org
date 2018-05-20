@@ -1,0 +1,24 @@
+#+title:note for org.
+#+author:reidyix
+#+email:reidyix@protonmail.com
+* this is a note for org.
+** hot-keys
+*** C-s C-d
+    DEADLINE: <2018-05-20 日> SCHEDULED: <2018-05-20 日>
+*** <s tab 快速插入代码
+    #+BEGIN_SRC emacs-lisp 
+    ;;code here
+    #+END_SRC
+*** DONE C-c C-t 快速切换状态
+    CLOSED: [2018-05-20 日 14:00]
+*** 特殊编辑 (新开层) (如上emacs-lisp) M-RET '
+
+
+
+
+
+
+   
+
+
+     
