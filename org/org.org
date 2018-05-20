@@ -1,8 +1,10 @@
 #+title:note for org.
 #+author:reidyix
 #+email:reidyix@protonmail.com
+#+keywords:org
+
 * this is a note for org.
-** hot-keys
+** hot-keys :标题添加tags C-c C-c:
 *** C-s C-d
     DEADLINE: <2018-05-20 日> SCHEDULED: <2018-05-20 日>
 *** <s tab 快速插入代码
@@ -12,13 +14,52 @@
 *** DONE C-c C-t 快速切换状态
     CLOSED: [2018-05-20 日 14:00]
 *** 特殊编辑 (新开层) (如上emacs-lisp) M-RET '
+***  各种区块
+<v tab
+#+begin_verse
+分行区块
+实际上并不懂什么是分行。
+#+end_verse
 
+<q tab
+#+begin_quote
+缩进区块
+#+end_quote
 
+<c tab
+#+begin_center
+居中区块
+#+end_center
+*** examples <e tab
+    单行的例子以:开头
+    :this is a exaple
+#+BEGIN_COMMENT
+这是一个栗子.
+#+END_COMMENT
+*** comments <C tab
+#+BEGIN_COMMENT
 
+#+END_COMMENT
+*** C-c C-q                                                        :正文增加tags:
 
-
-
+** 表格与图片
+***  引用
+    ;; 对于表格和图片，可以在前面增加标题和标签的说明，以方便交叉引用。
+    #+CAPTION: This is the caption for the next table (or link)
+    #+LABEL: tbl:table1
    
-
-
-     
+    ;; 则在需要的地方可以通过
+    \ref{table1}
+    ;; 来引用该表格。
+*** C-c | 创建或转换表格
+   | col1               | col2               | col3                         | col4                           | col5               |
+   |--------------------+--------------------+------------------------------+--------------------------------+--------------------|
+   | C-c C-c            | S-tab              | RET                          | M-RET / C-c C-RET              | M-left/right       |
+   | 不移动光标调整表格 | 移动光标到上一区域 | 移动到下一行，必要时新建一行 | 插入同级列表项，就是下面那条线 | 将当前列与左右互换 |
+   |                    |                    |                              |                                |                    |
+   |--------------------+--------------------+------------------------------+--------------------------------+--------------------|
+   | C-c -              |                    |                              |                                | M-up/down          |
+   | 添加水平分割线     |                    |                              |                                | 上下移动列表项     |
+   |--------------------+--------------------+------------------------------+--------------------------------+--------------------|
+   |                    |                    |                              |                                |                    |
+    
